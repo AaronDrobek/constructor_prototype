@@ -36,9 +36,7 @@ let atticus = new Dog(true)
 
 // Human Constructor & Prototype
 function Human (cool) {
-  this.owner = "";
   this.cool = cool;
-
   this.feed = function(name){
     return name.hungry = false;
   };
@@ -46,6 +44,8 @@ function Human (cool) {
     return name.status = "happy";
   }
 }
+
+
 
 
 
