@@ -8,23 +8,21 @@
 //            /____/
 
 // Dog Constructor & Prototype
-function Dog () {
+function Dog (hungry) {
   this.status = "normal";
   this.color = "black";
-  this.hungry = true;
-  this.pet = function(name){
-    console.log(this.status = "happy");
-  }
-
+  this.hungry = hungry;
 }
+
+
 
 
 // Instances of Dog
 // Needed: sadie, moonshine, atticus
-let sadie = new Dog()
-console.log(sadie.hungry = false);
-let moonshine = new Dog()
-let atticus = new Dog()
+let sadie = new Dog(false)
+let moonshine = new Dog(true)
+let atticus = new Dog(true)
+
 
 
 
@@ -37,21 +35,21 @@ let atticus = new Dog()
 // /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
 
 // Human Constructor & Prototype
-function Human () {
-  this.owner = false;
-  this.cool = true;
+function Human (cool) {
+  this.owner = "";
+  this.cool = cool;
+
   this.feed = function(name){
-    console.log(name.hungry = false);
+    return name.hungry = false;
   };
   this.pet = function(name){
-    console.log(name.status = "happy");
+    return name.status = "happy";
   }
 }
 
 
-let mason = new Human()
-console.log(mason.cool = false);
 
-let julia = new Human()
+let mason = new Human(false)
+let julia = new Human(true)
 // Instances of Human
 // Needed: mason, julia
